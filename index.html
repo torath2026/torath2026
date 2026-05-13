@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر تراث وأصالة</title>
+    <style>
+        :root {
+            --primary-color: #5d4037; /* بني غامق */
+            --secondary-color: #d4af37; /* ذهبي */
+            --bg-color: #f9f5f0; /* بيج فاتح */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* قسم المنتجات */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #999;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            margin: 10px 0;
+            color: var(--primary-color);
+        }
+
+        .price {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #3e2723;
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>تراث وأصالة</h1>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">الأواني</a>
+            <a href="#">المنسوجات</a>
+            <a href="#">عن المتجر</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">منتجاتنا المميزة</h2>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">صورة دلة قهوة</div>
+                <div class="product-info">
+                    <h3>دلة رسلان أصلية</h3>
+                    <p class="price">450 ر.س</p>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">صورة سدو</div>
+                <div class="product-info">
+                    <h3>سجاد سدو يدوي</h3>
+                    <p class="price">280 ر.س</p>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">صورة مبخرة</div>
+                <div class="product-info">
+                    <h3>مبخرة حائلية خشبية</h3>
+                    <p class="price">120 ر.س</p>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">صورة صندوق</div>
+                <div class="product-info">
+                    <h3>صندوق "مندوس" تراثي</h3>
+                    <p class="price">600 ر.س</p>
+                    <button class="buy-btn">إضافة للسلة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - متجر تراث وأصالة</p>
+        <p>جودة الماضي بروح الحاضر</p>
+    </footer>
+
+</body>
+</html>
